@@ -1,3 +1,15 @@
+# v1.0.7 (Mon Sep 16 2024)
+
+#### ⚠️ Pushed to `main`
+
+- gh token (danielmlow@dhcp-10-250-136-6.harvard.edu)
+
+#### Authors: 1
+
+- Daniel M. Low (danielmlow@dhcp-10-250-136-6.harvard.edu)
+
+---
+
 # v1.0.6 (Mon Sep 16 2024)
 
 #### ⚠️ Pushed to `main`
