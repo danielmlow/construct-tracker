@@ -1,3 +1,17 @@
+# v1.0.8 (Tue Sep 17 2024)
+
+#### ⚠️ Pushed to `main`
+
+- pyproject (danielmlow@dhcp-10-250-136-6.harvard.edu)
+- bugs in lexicon.py (danielmlow@dhcp-10-250-136-6.harvard.edu)
+- Bump version to (danielmlow@dhcp-10-250-136-6.harvard.edu)
+
+#### Authors: 1
+
+- Daniel M. Low ([@danielmlow](https://github.com/danielmlow))
+
+---
+
 # v1.0.7 (Mon Sep 16 2024)
 
 #### ⚠️ Pushed to `main`
