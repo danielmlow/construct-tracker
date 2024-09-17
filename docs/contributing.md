@@ -2,6 +2,46 @@
 
 # Contributing to ```construct-tracker```
 
+
+- Install python 3.10
+- pip install pre-commit
+```
+pip install pre-commit
+nano ~/.zshrc
+```
+  - add line: `export PATH="$PATH:$HOME/.local/bin"` 
+  - reload: `source ~/.zshrc`
+
+- Install poetry
+```
+curl -sSL https://install.python-poetry.org | python3 -
+$HOME/.local/bin # Add poetry to PATH
+nano ~/.zshrc
+```
+  - add line: `export PATH="$PATH:$HOME/.local/bin"`
+  - reload: `source ~/.zshrc`
+  - `poetry --version`
+
+```
+
+poetry lock
+poetry install
+pre-commit run --all-files
+```
+Now you can build package locally before commiting. This will create a .tar.gz and .whl file for your package in the dist/ directory:
+- `poetry build`
+
+
+Install the Built Package Locally in a virtual environment:
+
+Install miniconda: https://docs.anaconda.com/miniconda/
+```
+conda create --name ct python=3.10
+pip install dist/construct_tracker-1.0.0b0-py3-none-any.whl
+``` 
+
+
+
 **Pull requests** are always welcome, and we appreciate any help you give.
 Note that a code of conduct applies to all spaces managed by the `construct-tracker` project, including issues and pull requests. Please see the [Code of Conduct](CODE_OF_CONDUCT.md) for details.
 
@@ -48,7 +88,7 @@ conda activate py310
 		rm -rf ~/.cache/pre-commit
 		rm -rf /Users/danielmlow/.cache/pre-commit
 		pre-commit uninstall
-		pre-commit install
+		pre-commit instpoetry lall
 		poetry lock
 	  ```
 	  - For all hooks:

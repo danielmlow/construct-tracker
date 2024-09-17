@@ -1,4 +1,0 @@
-document_id,documents,documents_tokenized,Insight_max,Mindfulness_max,Compassion_max
-1,"Every time I speak with my cousin Bob, I have great moments of insight, clarity, and wisdom","['Every time I speak with my cousin Bob, I have great moments of insight, clarity, and wisdom']",3.4820375754510344,2.7154749009491894,0.4820375754510342
-2,"He meditates a lot, but he's not super smart","['He meditates a lot', ""he's not super smart""]",0.0,1.0,0.0
-0,He is too competitive,['He is too competitive'],0.44793741824306793,0.38269142791714655,0.32720519431228967

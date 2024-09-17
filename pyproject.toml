@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "construct-tracker"
-version = "0.0.0"  # dynamic versioning strategy
+version = "v1.0.6"  # dynamic versioning strategy
 description = "Track and measure constructs, concepts or categories in text documents."
 authors = ["Daniel M. Low <daniel.m.low@gmail.com>"]
 maintainers = ["Daniel M. Low <daniel.m.low@gmail.com>"]
@@ -31,7 +31,7 @@ cython = ">=0.29.24"
 spacy = {version = "~=3.7.3", extras = []}
 nltk = "~=3.8"
 "sentence-transformers" = {version = "~=2.7", extras = []}
-# numpy = "<=1.23"  # Adjust this version based on compatibility
+numpy = ">=1.19,<1.26.5"  # Restrict numpy to versions less than or equal to 1.26.4
 # thinc = "~9.1.1" # installed by spacy
 # pandas = ">=2.0.0,<3.0.0" # sentence-transformers
 # scikit-learn = "~=1.5" #sentence-transformers
