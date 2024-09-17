@@ -1,3 +1,15 @@
+# v1.0.9 (Tue Sep 17 2024)
+
+#### ⚠️ Pushed to `main`
+
+- bugs in lexicon.py (danielmlow@dhcp-10-250-136-6.harvard.edu)
+
+#### Authors: 1
+
+- Daniel M. Low (danielmlow@dhcp-10-250-136-6.harvard.edu)
+
+---
+
 # v1.0.8 (Tue Sep 17 2024)
 
 #### ⚠️ Pushed to `main`
