@@ -9,10 +9,23 @@
 <!-- [![pages](https://img.shields.io/badge/api-docs-blue)](https://sensein.github.io/construct-tracker) -->
 
 # construct-tracker
-Track and measure constructs, concepts or categories in text documents. Built on top of the litellm package to use most Generative AI models.
+Track and measure constructs, concepts or categories in text documents. Build interpretable lexicon models quickly by using LLMs. Built on top of the OpenRouterAI package so you can use most Generative AI models.
 
-**If you use, please cite**: Low DM, Rankin O, Coppersmith DDL, Bentley KH, Nock MK, Ghosh SS (2024). Building lexicons with generative AI result in lightweight and interpretable text models with high content validity. arXiv.
+## Why build lexicons? 
 
+They can be used to build models that are:
+
+#### - **interpretable**: understand why the model outputs a given score, which can help avoid biases and guarantee the model will detect certain phrases (important for high-risk scenarios to use in tandem with LLMs)
+#### - **lightweight**: no GPU needed (unlike LLMs)
+#### - **private and free**: you can run on your local computer instead of submitting to a cloud API (OpenAI) which may not be secure
+#### - **have high content validity**: measure what you actually want to measure (unlike existing lexicons or models that measure something only slightly related)
+
+<br>
+
+# If you use, please cite
+Low DM, Rankin O, Coppersmith DDL, Bentley KH, Nock MK, Ghosh SS (2024). Using Generative AI to create lexicons for interpretable text models with high content validity. PsyarXiv.
+
+<br>
 
 # Installation
 
@@ -20,7 +33,51 @@ Track and measure constructs, concepts or categories in text documents. Built on
 pip install construct-tracker
 ```
 
-# Quick usage
+<br>
+
+# Measure 49 suicide risk factors in text data
+
+<img src="docs/images/suicide_risk_lexicon.png" alt="Highlight matches" width="900"/>
+
+**Tutorial** [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/construct-tracker/blob/main/tutorials/suicide_risk_lexicon.ipynb)
+
+We have created a lexicon with 49 risk factors for suicidal thoughts and behaviors (plus one construct for kinship) validated by clinicians who are experts in suicide research.
+
+```python
+from construct_tracker import lexicon
+
+srl = lexicon.load_lexicon(name = 'srl_v1-0') # Load lexicon
+
+documents = [
+	"I've been thinking about ending it all. I've been cutting. I just don't want to wake up.",
+	"I've been feeling all alone. No one cares about me. I've been hospitalized multiple times. I just want out. I'm pretty hopeless" 
+             ]
+
+# Extract 
+counts, matches_by_construct, matches_doc2construct, matches_construct2doc = srl.extract(documents, normalize = False)
+
+counts
+```
+<img src="docs/images/extract_suicide_risk_lexicon.png" alt="Highlight matches" width="900"/>
+
+<!-- lexicon_dict = srl.to_dict()
+features, documents_tokenized, lexicon_dict_final_order, cosine_similarities = cts.measure(
+    lexicon_dict,
+    documents_subset,
+    )
+
+<!-- <img src="docs/images/srl_cts_scores.png" alt="Construct-text similarity of Suicide Risk Lexicon" width="700"/> --> 
+
+You can also access the Suicide Risk Lexicon in csv and json formats:
+- https://github.com/danielmlow/construct-tracker/blob/main/src/construct_tracker/data/lexicons/suicide_risk_lexicon_v1-0/suicide_risk_lexicon_validated_24-08-02T21-27-35.csv
+- https://github.com/danielmlow/construct-tracker/blob/main/src/construct_tracker/data/lexicons/suicide_risk_lexicon_v1-0/suicide_risk_lexicon_validated_24-08-02T21-27-35.json
+
+
+<br>
+
+
+
+# Create your own lexicon using generative AI
 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/construct-tracker/blob/main/tutorials/construct_tracker.ipynb)
 
@@ -38,14 +95,14 @@ documents = [
 Choose model [here](https://docs.litellm.ai/docs/providers) and obtain an API key from that provider. Cohere offers a free trial API key, 5 requests per minute. I'm going to choose GPT-4o:
 
 ```python
-os.environ["OPENAI_API_KEY"]  = 'YOUR_OPENAI_API_KEY'
-gpt4o = "gpt-4o-2024-05-13"
+os.environ["api_key"]  = 'YOUR_OPENAI_API_KEY' # This one might work for free models if no submissions have been tested:  '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'
+model = 'gpt-4o'
 ```
 
 Two lines of code to create a lexicon
 ```python
 l = lexicon.Lexicon()         # Initialize lexicon
-l.add('Insight', section = 'tokens', value = 'create', source = gpt4o)
+l.add('Insight', section = 'tokens', value = 'create', source = model)
 ```
 
 See results:
@@ -133,35 +190,6 @@ We provide many features to add/remove tokens, generate definitions, validate wi
 
 <br>
 
-# Suicide Risk Lexicon
-
-Lexicon is available in multiple formats:
-- `https://github.com/danielmlow/construct-tracker/blob/main/src/construct_tracker/data/lexicons/suicide_risk_lexicon_v1-0/suicide_risk_lexicon_validated_24-08-02T21-27-35.csv`
-- `https://github.com/danielmlow/construct-tracker/blob/main/src/construct_tracker/data/lexicons/suicide_risk_lexicon_v1-0/suicide_risk_lexicon_validated_24-08-02T21-27-35.json`
-
-Or you can load lexicon object from the pickle file to extract features from new document.
-
-[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/construct-tracker/blob/main/tutorials/suicide_risk_lexicon.ipynb)
-
-We have created a lexicon with 49 risk factors for suicidal thoughts and behaviors validated by clinicians who are experts in suicide research.
-```python
-from construct_tracker import lexicon
-# Load lexicon
-srl = lexicon.load_lexicon(name = 'srl_v1-0')
-# Load only tokens that are highly prototypical of each construct
-srl_prototypes = lexicon.load_lexicon(name = 'srl_prototypes_v1-0')
-```
-<!-- lexicon_dict = srl.to_dict()
-features, documents_tokenized, lexicon_dict_final_order, cosine_similarities = cts.measure(
-    lexicon_dict,
-    documents_subset,
-    )
-
-<img src="docs/images/srl_cts_scores.png" alt="Construct-text similarity of Suicide Risk Lexicon" width="700"/> -->
-
-
-<br>
-
 # Structure of the `lexicon.Lexicon()` object
 
 ```python
@@ -205,9 +233,45 @@ print(my_lexicon.constructs)
 }
 ```
 
+
 <!-- # Other features -->
 <!-- TODO -->
 
+
+<!-- # Identify constructs with Generative AI models
+
+```python
+prompt_template_with_definitions = """Classify the text into one or more of the following {context} categories with their corresponding definitions:\n\n{categories}
+
+Provide a score (between 0 and 1) as to whether the text clearly mentions the category and an explanation (words or phrases from the text that are very prototypical expressions of the category).
+Text: 
+{text}
+
+Structure your response in the following JSON format (no extra text):
+{{'category_A': [[score], [words, phrases]], 'category_B': [[score], [words, phrases]], ...}}
+
+JSON:
+"""
+
+categories_with_definitions = {'desire to escape': 'wanting to escape emotional pain', 
+              'suicidal ideation': "desire of not wanting to live", 
+              'anger': "negative high arousal with irritability and anger",
+              'loneliness': "aversive state experienced when a discrepancy exists between the interpersonal relationships one wishes to have and those that one perceives they currently have. The perception that one's social relationships are not living up to some expectation",
+              }
+
+# indent dict one line per entry
+categories_with_definitions = '\n'.join([f"{key}: {value}" for key, value in categories_with_definitions.items()])
+
+# Insert into prompt
+prompt_with_definitions = prompt_template_with_definitions.format(context = '', # I change to prompt_template_with_definitions
+              categories = categories_with_definitions,
+              text= text
+              )
+
+
+print('Prompt:')
+print(prompt_with_definitions)
+``` -->
 
 # Contributing
 <!-- TODO -->

@@ -1,0 +1,6 @@
+sentence,suicidal ideation_score,suicidal ideation_explanation,desire to escape_score,desire to escape_explanation,loneliness_score,loneliness_explanation,anger_score,anger_explanation
+1_suicidewatch,0.9,"['ready to stop existing', ""I don't see a way to ever feel happy again""]",0.7,"['that desire is still there', 'years of depression have won']",0.5,"[""Husband decides he's ready to divorce"", 'mostly all of my fault']",,
+2_anxiety,0.0,[],0.3,"['wanting to escape emotional pain', 'avoid certain interactions', ""fear that it's going to happen again""]",0.5,"['social situations', 'various other interactions have gotten a lot harder', 'some of my closest friends']",0.0,[]
+3_anxiety,0.0,[],0.3,"['wanting to escape emotional pain', ""I don't know what to do, I don't know how to cope""]",0.4,['worried my husband is going to start hating me'],0.0,[]
+4_anxiety,0.0,[],0.2,"['wanting to escape emotional pain', 'trying to enjoy the feeling', 'accept the feeling and enjoy it no matter how shitty it is']",0.0,[],0.0,[]
+5_suicidewatch,0.9,"['Would drinking isopropyl alcohol kill me?', 'Would it be any better than bleach?']",0.5,"['drinking isopropyl alcohol', 'bleach']",,,,

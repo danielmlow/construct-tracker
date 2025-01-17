@@ -194,7 +194,8 @@ class Lexicon:
 			# TODO: the formatting request might not work well for models worse than GPT-4
 		else:
 			prompt = f"Provide a brief definition of {construct}. Provide reference in APA format where you got it from. Return result in the following format: {{'{construct}': 'the_definition', 'reference':'the_reference'}}"
-		definition = api_request(prompt, model=model, timeout=timeout, num_retries=num_retries)
+		definition = api_request(prompt, model=model, 
+						   )
 		# Convert the string to a dictionary
 		try:
 			definition = definition = eval(eval(definition))
@@ -334,8 +335,6 @@ class Lexicon:
 		temperature: float = 0.1,
 		top_p: float = 1,
 		seed: int = 42,
-		timeout: int = 120,
-		num_retries: int = 2,
 		max_tokens: Optional[
 			int
 		] = 150,  # If set to None (whatever the model decides), it make take a long time and generate a lot of phrases combining the words which may be redundant. default is 150
@@ -400,17 +399,16 @@ class Lexicon:
 					response = api_request(
 						prompt,
 						model=source,
-						api_key=api_key,
+						# api_key=api_key,
 						temperature=temperature,
 						top_p=top_p,
-						timeout=timeout,
-						num_retries=num_retries,
 						max_tokens=max_tokens,
 						seed=seed,
 					)
 					end = time.time()
 					time_elapsed = end - start
 					time_elapsed = round(time_elapsed, 1)
+					print(response)
 
 					tokens = self.clean_response(response, response_type="tokens")
 
