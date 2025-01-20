@@ -49,4 +49,4 @@ jobs:
       run: |
         ~/auto shipit -vv
       env:
-        GH_TOKEN: ${{ secrets.GH_Token }}
+        GH_TOKEN: ${{ secrets.CT_SECRET }}

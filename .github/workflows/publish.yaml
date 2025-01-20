@@ -45,7 +45,7 @@ jobs:
         git config user.name "danielmlow"
         git config user.email "daniel.m.low@gmail.com"
         git commit -am "Bump version to $latest_tag"
-        git push https://${{ secrets.GITHUB_TOKEN }}@github.com/danielmlow/construct-tracker.git main
+        git push https://${{ secrets.CT_SECRET }}@github.com/danielmlow/construct-tracker.git main
         git push origin main
     - name: Build package
       run: poetry build
