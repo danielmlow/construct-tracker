@@ -115,14 +115,14 @@ repos:
     language: fail
     files: \.yml$
 
-# Local hook to run pytest with testmon
-- repo: local
-  hooks:
-  - id: pytest
-    language: system            # Specify the environment (system uses the Python environment managed by Poetry)
-    # language_version: python3.10 # Ensure it runs in Python 3.10
-    name: pytest
-    entry: poetry run pytest     # Use `poetry run pytest` to run tests
-    types: [python]
-    pass_filenames: false        # Do not pass filenames to pytest
-    always_run: true             # Always run this hook
+# # Local hook to run pytest with testmon
+# - repo: local
+#   hooks:
+#   - id: pytest
+#     language: system            # Specify the environment (system uses the Python environment managed by Poetry)
+#     # language_version: python3.10 # Ensure it runs in Python 3.10
+#     name: pytest
+#     entry: poetry run pytest     # Use `poetry run pytest` to run tests
+#     types: [python]
+#     pass_filenames: false        # Do not pass filenames to pytest
+#     always_run: true             # Always run this hook

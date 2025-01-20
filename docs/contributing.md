@@ -9,7 +9,7 @@
 pip install pre-commit
 nano ~/.zshrc
 ```
-  - add line: `export PATH="$PATH:$HOME/.local/bin"` 
+  - add line: `export PATH="$PATH:$HOME/.local/bin"`
   - reload: `source ~/.zshrc`
 
 - Install poetry
@@ -28,7 +28,7 @@ poetry lock
 poetry install
 pre-commit run --all-files
 ```
-Now you can build package locally before commiting. This will create a .tar.gz and .whl file for your package in the dist/ directory:
+Now you can build package locally before committing. This will create a .tar.gz and .whl file for your package in the dist/ directory:
 - `poetry build`
 
 
@@ -38,7 +38,7 @@ Install miniconda: https://docs.anaconda.com/miniconda/
 ```
 conda create --name ct python=3.10
 pip install dist/construct_tracker-1.0.0b0-py3-none-any.whl
-``` 
+```
 
 
 
@@ -50,9 +50,10 @@ Please use the following workflow when contributing:
 
 # Create a virtual environment
 
+```
 conda create --name py310 python=3.10.14
 conda activate py310
-
+```
 
 
 
@@ -88,7 +89,7 @@ conda activate py310
 		rm -rf ~/.cache/pre-commit
 		rm -rf /Users/danielmlow/.cache/pre-commit
 		pre-commit uninstall
-		pre-commit instpoetry lall
+		pre-commit install
 		poetry lock
 	  ```
 	  - For all hooks:
@@ -109,11 +110,11 @@ conda activate py310
       git commit -m 'message'
       git fetch --tags
       git rebase origin/main
-      
+
       git checkout main
       git pull origin main
       git push origin main --tags
-      ``` 
+      ```
 
 9. **Add repository secrets**: From your github web interface, add the following repository secrets: ```CODECOV_TOKEN``` (CodeCov), ```HF_TOKEN``` (HuggingFace), ```PYPI_TOKEN``` (Pypi).
 10. **Submit a pull request**: Once you are done adding your new amazing functionality, submit a pull request to merge the upstream issue branch into the upstream main.

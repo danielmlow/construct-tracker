@@ -11,7 +11,7 @@
 # construct-tracker
 Track and measure constructs, concepts or categories in text documents. Build interpretable lexicon models quickly by using LLMs. Built on top of the OpenRouterAI package so you can use most Generative AI models.
 
-## Why build lexicons? 
+## Why build lexicons?
 
 They can be used to build models that are:
 
@@ -50,10 +50,10 @@ srl = lexicon.load_lexicon(name = 'srl_v1-0') # Load lexicon
 
 documents = [
 	"I've been thinking about ending it all. I've been cutting. I just don't want to wake up.",
-	"I've been feeling all alone. No one cares about me. I've been hospitalized multiple times. I just want out. I'm pretty hopeless" 
+	"I've been feeling all alone. No one cares about me. I've been hospitalized multiple times. I just want out. I'm pretty hopeless"
              ]
 
-# Extract 
+# Extract
 counts, matches_by_construct, matches_doc2construct, matches_construct2doc = srl.extract(documents, normalize = False)
 
 counts
@@ -66,7 +66,7 @@ features, documents_tokenized, lexicon_dict_final_order, cosine_similarities = c
     documents_subset,
     )
 
-<!-- <img src="docs/images/srl_cts_scores.png" alt="Construct-text similarity of Suicide Risk Lexicon" width="700"/> --> 
+<!-- <img src="docs/images/srl_cts_scores.png" alt="Construct-text similarity of Suicide Risk Lexicon" width="700"/> -->
 
 You can also access the Suicide Risk Lexicon in csv and json formats:
 - https://github.com/danielmlow/construct-tracker/blob/main/src/construct_tracker/data/lexicons/suicide_risk_lexicon_v1-0/suicide_risk_lexicon_validated_24-08-02T21-27-35.csv
@@ -244,7 +244,7 @@ print(my_lexicon.constructs)
 prompt_template_with_definitions = """Classify the text into one or more of the following {context} categories with their corresponding definitions:\n\n{categories}
 
 Provide a score (between 0 and 1) as to whether the text clearly mentions the category and an explanation (words or phrases from the text that are very prototypical expressions of the category).
-Text: 
+Text:
 {text}
 
 Structure your response in the following JSON format (no extra text):
@@ -253,8 +253,8 @@ Structure your response in the following JSON format (no extra text):
 JSON:
 """
 
-categories_with_definitions = {'desire to escape': 'wanting to escape emotional pain', 
-              'suicidal ideation': "desire of not wanting to live", 
+categories_with_definitions = {'desire to escape': 'wanting to escape emotional pain',
+              'suicidal ideation': "desire of not wanting to live",
               'anger': "negative high arousal with irritability and anger",
               'loneliness': "aversive state experienced when a discrepancy exists between the interpersonal relationships one wishes to have and those that one perceives they currently have. The perception that one's social relationships are not living up to some expectation",
               }
