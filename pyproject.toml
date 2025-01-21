@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "construct-tracker"
-version = "v1.0.12"
+version = "v1.0.13"
 description = "Track and measure constructs, concepts or categories in text documents."
 authors = ["Daniel M. Low <daniel.m.low@gmail.com>"]
 maintainers = ["Daniel M. Low <daniel.m.low@gmail.com>"]

@@ -239,11 +239,11 @@ def measure(
 
         except Exception as e:
             # If you need to encode new tokens:
+            stored_embeddings = {}
             tokens_to_encode = [n for n in lexicon_tokens_concat if n not in stored_embeddings.keys()]
             logger.warning(
                 f"Error {e}. Did not find it. Extracting all lexicon token embeddings from scratch instead of loading stored embeddings..."
             )
-            stored_embeddings = {}
 
     sentence_embedding_model = SentenceTransformer(embeddings_model)  # load embedding
 
