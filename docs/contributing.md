@@ -48,14 +48,12 @@ Note that a code of conduct applies to all spaces managed by the `construct-trac
 ## Workflow
 Please use the following workflow when contributing:
 
-# Create a virtual environment
+Create a virtual environment
 
 ```
 conda create --name py310 python=3.10.14
 conda activate py310
 ```
-
-
 
 0. **Install poetry and versioneer for dynamic versioning**:
   - ```pip install poetry==1.7.1```
