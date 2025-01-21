@@ -104,7 +104,7 @@ conda activate py310
 			```poetry run ruff check --fix```
 		- Spell checking:
 			```pre-commit run codespell --all-files```
-    - add commit
+    - add and commit
       ```
       git add .
       git commit -m 'message'

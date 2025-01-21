@@ -15,10 +15,10 @@ Track and measure constructs, concepts or categories in text documents. Build in
 
 They can be used to build models that are:
 
-#### - **interpretable**: understand why the model outputs a given score, which can help avoid biases and guarantee the model will detect certain phrases (important for high-risk scenarios to use in tandem with LLMs)
-#### - **lightweight**: no GPU needed (unlike LLMs)
-#### - **private and free**: you can run on your local computer instead of submitting to a cloud API (OpenAI) which may not be secure
-#### - **have high content validity**: measure what you actually want to measure (unlike existing lexicons or models that measure something only slightly related)
+- **interpretable**: understand why the model outputs a given score, which can help avoid biases and guarantee the model will detect certain phrases (important for high-risk scenarios to use in tandem with LLMs)
+- **lightweight**: no GPU needed (unlike LLMs)
+- **private and free**: you can run on your local computer instead of submitting to a cloud API (OpenAI) which may not be secure
+- **have high content validity**: measure what you actually want to measure (unlike existing lexicons or models that measure something only slightly related)
 
 <br>
 

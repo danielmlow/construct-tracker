@@ -16,7 +16,6 @@ def api_request(
     top_p: float = 1.0,
     max_tokens: Optional[int] = None,
     seed: Optional[int] = None,
-    response_format: Optional[dict] = {"type": "json_object"},
 ) -> Tuple[Dict, Dict]:
     """Send a prompt to the specified model and return the generated response.
 
@@ -45,7 +44,6 @@ def api_request(
                 "model": model,  # Optional
                 "temperature": temperature,
                 "top_p": top_p,
-                "response_format": response_format,
                 "max_tokens": max_tokens,
                 "seed": seed,
                 "messages": [{"role": "user", "content": prompt}],
@@ -53,21 +51,26 @@ def api_request(
         ),
     )
     metadata = json.loads(response.text.strip())
+
     try:
         final_result = metadata["choices"][0]["message"]["content"]
-        final_result = dict(eval(final_result))
+        # final_result = dict(eval(final_result))
         return final_result, metadata
     except Exception as e:
         print("Error:", e)
         print("""
-            Could not parse the response, probably because the model
-            - (a) did not follow the instructions well. gpt-4o,gpt-4o-mini, gemini 1.5, claude 3.5  works well.
-            - (b) you did not provide an API key
-            - (c) Rate limit exceeded for free models
-            - (d) You do not have funds associated with your API key
+            Here are some common errors:
+            - some errors described here: https://openrouter.ai/docs/errors
+            - {'error': {'message': 'No auth credentials found', 'code': 401}} means the The key is invalid
+            - did not follow the instructions well. gpt-4o,gpt-4o-mini, gemini 1.5, claude 3.5  work well.
+            - you did not provide an API key
+            - Rate limit exceeded for free models
+            - You do not have funds associated with your API key
+
             """)
-        print("This is what I'm trying to parse with eval() in content:")
+        print("Here's the complete metadata. construct-tracker wishes to parse the string in 'content':")
         print(metadata)
+
         return
 
 

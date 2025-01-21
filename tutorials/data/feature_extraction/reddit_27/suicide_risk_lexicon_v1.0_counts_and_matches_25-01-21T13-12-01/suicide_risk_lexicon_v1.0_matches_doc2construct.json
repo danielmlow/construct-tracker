@@ -1,0 +1,4455 @@
+{
+    "0": {
+        "Passive suicidal ideation": [
+            1,
+            [
+                "end it all"
+            ]
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            1,
+            [
+                "end it all"
+            ]
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            2,
+            [
+                "die",
+                "end it"
+            ]
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            2,
+            [
+                "alone"
+            ]
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            2,
+            [
+                "parent",
+                "partner"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            1,
+            [
+                "push"
+            ]
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            1,
+            [
+                "nothing work"
+            ]
+        ],
+        "Burdensomeness": [
+            1,
+            [
+                "burden"
+            ]
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            1,
+            [
+                "pathetic"
+            ]
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            2,
+            [
+                "afraid",
+                "worry"
+            ]
+        ],
+        "Panic": [
+            2,
+            [
+                "afraid",
+                "worry"
+            ]
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            1,
+            [
+                "worry"
+            ]
+        ],
+        "Rumination": [
+            1,
+            [
+                "worry"
+            ]
+        ],
+        "Depressed mood": [
+            3,
+            [
+                "crying",
+                "depress",
+                "sad"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            1,
+            [
+                "crying"
+            ]
+        ],
+        "Grief & bereavement": [
+            2,
+            [
+                "crying",
+                "die"
+            ]
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            1,
+            [
+                "depress"
+            ]
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            2,
+            [
+                "job",
+                "work"
+            ]
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "1": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            1,
+            [
+                "ever love me"
+            ]
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            1,
+            [
+                "parent"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            1,
+            [
+                "hit i"
+            ]
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            1,
+            [
+                "broken"
+            ]
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            4,
+            [
+                "broken",
+                "pathetic",
+                "unlovable"
+            ]
+        ],
+        "Guilt": [
+            1,
+            [
+                "fucked up"
+            ]
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            3,
+            [
+                "despair",
+                "empty",
+                "miserable"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            2,
+            [
+                "despair",
+                "hollow"
+            ]
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            2,
+            [
+                "despair",
+                "hollow"
+            ]
+        ],
+        "Emptiness": [
+            2,
+            [
+                "empty",
+                "hollow"
+            ]
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            1,
+            [
+                "perfect"
+            ]
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "2": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            1,
+            [
+                "die"
+            ]
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            0,
+            []
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            1,
+            [
+                "attack i"
+            ]
+        ],
+        "Aggression & irritability": [
+            2,
+            [
+                "attack"
+            ]
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            4,
+            [
+                "anxiety",
+                "panic"
+            ]
+        ],
+        "Panic": [
+            2,
+            [
+                "panic"
+            ]
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            4,
+            [
+                "anxiety",
+                "panic attack"
+            ]
+        ],
+        "Agitation": [
+            2,
+            [
+                "panic"
+            ]
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            1,
+            [
+                "die"
+            ]
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            1,
+            [
+                "mania"
+            ]
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            2,
+            [
+                "panic attack"
+            ]
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            1,
+            [
+                "psychiatr"
+            ]
+        ]
+    },
+    "3": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            1,
+            [
+                "overdose"
+            ]
+        ],
+        "Lethal means for suicide": [
+            1,
+            [
+                "overdose"
+            ]
+        ],
+        "Direct self-injury": [
+            1,
+            [
+                "overdose"
+            ]
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            0,
+            []
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            2,
+            [
+                "morphine",
+                "overdo"
+            ]
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            2,
+            [
+                "scare"
+            ]
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            1,
+            [
+                "drift"
+            ]
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "4": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            1,
+            [
+                "kill myself"
+            ]
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            0,
+            []
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "5": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            3,
+            [
+                "have no one",
+                "no friend",
+                "no one to talk"
+            ]
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            10,
+            [
+                "friend",
+                "parent",
+                "relationship"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            4,
+            [
+                "scare",
+                "terrified"
+            ]
+        ],
+        "Panic": [
+            1,
+            [
+                "terrified"
+            ]
+        ],
+        "Entrapment & desire to escape": [
+            2,
+            [
+                "don't know what to do",
+                "stick"
+            ]
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            2,
+            [
+                "lose he",
+                "losing her"
+            ]
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            1,
+            [
+                "don't know what to do"
+            ]
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            7,
+            [
+                "bpd",
+                "bpd",
+                "fp"
+            ]
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            1,
+            [
+                "girl"
+            ]
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            1,
+            [
+                "work"
+            ]
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "6": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            2,
+            [
+                "bridge",
+                "jump off"
+            ]
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            1,
+            [
+                "dying"
+            ]
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            2,
+            [
+                "family",
+                "friend"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            1,
+            [
+                "messed up"
+            ]
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            1,
+            [
+                "sad"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            1,
+            [
+                "sick"
+            ]
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            1,
+            [
+                "save"
+            ]
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "7": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            1,
+            [
+                "sible"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            1,
+            [
+                "shake"
+            ]
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            1,
+            [
+                "shake"
+            ]
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            1,
+            [
+                "work"
+            ]
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "8": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            2,
+            [
+                "alone",
+                "lonely"
+            ]
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            0,
+            []
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            1,
+            [
+                "afraid"
+            ]
+        ],
+        "Panic": [
+            1,
+            [
+                "afraid"
+            ]
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            2,
+            [
+                "sleep"
+            ]
+        ],
+        "Sleep issues": [
+            2,
+            [
+                "sleep"
+            ]
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "9": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            2,
+            [
+                "friend"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            1,
+            [
+                "medicat"
+            ]
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            1,
+            [
+                "negative thought"
+            ]
+        ],
+        "Depressed mood": [
+            7,
+            [
+                "depress",
+                "negative",
+                "sad",
+                "sadness"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            3,
+            [
+                "depress"
+            ]
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            1,
+            [
+                "medication"
+            ]
+        ]
+    },
+    "10": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            11,
+            [
+                "family",
+                "friend"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            3,
+            [
+                "box"
+            ]
+        ],
+        "Aggression & irritability": [
+            1,
+            [
+                "offend"
+            ]
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            2,
+            [
+                "dread",
+                "panic"
+            ]
+        ],
+        "Panic": [
+            2,
+            [
+                "dread",
+                "panic"
+            ]
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            1,
+            [
+                "panic"
+            ]
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            2,
+            [
+                "upset"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            1,
+            [
+                "judge"
+            ]
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            1,
+            [
+                "work"
+            ]
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "11": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            2,
+            [
+                "relationship"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            2,
+            [
+                "hit",
+                "hit me"
+            ]
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            1,
+            [
+                "anxious"
+            ]
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            1,
+            [
+                "don't know what to do"
+            ]
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            1,
+            [
+                "anxious"
+            ]
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            1,
+            [
+                "don't know what to do"
+            ]
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "12": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            0,
+            []
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            2,
+            [
+                "resent"
+            ]
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            4,
+            [
+                "bpd",
+                "bpd"
+            ]
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "13": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            0,
+            []
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            4,
+            [
+                "angry",
+                "annoying",
+                "offend"
+            ]
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            1,
+            [
+                "i annoy"
+            ]
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            2,
+            [
+                "anxious",
+                "nervous"
+            ]
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            2,
+            [
+                "anxious",
+                "nervous"
+            ]
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            1,
+            [
+                "cry"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            1,
+            [
+                "cry"
+            ]
+        ],
+        "Grief & bereavement": [
+            1,
+            [
+                "cry"
+            ]
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            1,
+            [
+                "i criticize"
+            ]
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            1,
+            [
+                "talk too much"
+            ]
+        ],
+        "Borderline Personality Disorder": [
+            1,
+            [
+                "too angry"
+            ]
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            1,
+            [
+                "question"
+            ]
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "14": {
+        "Passive suicidal ideation": [
+            1,
+            [
+                "giving up"
+            ]
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            2,
+            [
+                "attempt"
+            ]
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            2,
+            [
+                "suicide"
+            ]
+        ],
+        "Other suicidal language": [
+            4,
+            [
+                "die",
+                "dying",
+                "suicide"
+            ]
+        ],
+        "Hospitalization": [
+            1,
+            [
+                "inpatient"
+            ]
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            1,
+            [
+                "my ex"
+            ]
+        ],
+        "Relationships & kinship": [
+            5,
+            [
+                "friend",
+                "husband",
+                "my ex"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            1,
+            [
+                "fight"
+            ]
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            1,
+            [
+                "meds"
+            ]
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            2,
+            [
+                "broken",
+                "giving up"
+            ]
+        ],
+        "Burdensomeness": [
+            2,
+            [
+                "burden",
+                "drain"
+            ]
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            1,
+            [
+                "broken"
+            ]
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            1,
+            [
+                "crisis"
+            ]
+        ],
+        "Entrapment & desire to escape": [
+            2,
+            [
+                "exit",
+                "stick"
+            ]
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            1,
+            [
+                "miserable"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            3,
+            [
+                "hurt",
+                "pain"
+            ]
+        ],
+        "Grief & bereavement": [
+            1,
+            [
+                "die"
+            ]
+        ],
+        "Existential meaninglessness & purposelessness": [
+            1,
+            [
+                "meaningless"
+            ]
+        ],
+        "Emptiness": [
+            1,
+            [
+                "drain"
+            ]
+        ],
+        "Hopelessness": [
+            1,
+            [
+                "giving up"
+            ]
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            6,
+            [
+                "drain",
+                "tired"
+            ]
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            3,
+            [
+                "pain",
+                "sick"
+            ]
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            3,
+            [
+                "retire",
+                "work"
+            ]
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            2,
+            [
+                "get help",
+                "therapy"
+            ]
+        ]
+    },
+    "15": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            1,
+            [
+                "no friend"
+            ]
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            1,
+            [
+                "cheat"
+            ]
+        ],
+        "Relationships & kinship": [
+            4,
+            [
+                "bf",
+                "friend",
+                "relationship"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            1,
+            [
+                "heated"
+            ]
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            2,
+            [
+                "insecure",
+                "trouble"
+            ]
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            1,
+            [
+                "split"
+            ]
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            2,
+            [
+                "boy",
+                "girl"
+            ]
+        ],
+        "Discrimination": [
+            3,
+            [
+                "profile"
+            ]
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "16": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            1,
+            [
+                "shoot myself"
+            ]
+        ],
+        "Lethal means for suicide": [
+            2,
+            [
+                "gun",
+                "shoot myself"
+            ]
+        ],
+        "Direct self-injury": [
+            1,
+            [
+                "shoot myself"
+            ]
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            1,
+            [
+                "father"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            1,
+            [
+                "gun"
+            ]
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            1,
+            [
+                "failure"
+            ]
+        ],
+        "Burdensomeness": [
+            1,
+            [
+                "burden"
+            ]
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            1,
+            [
+                "depress"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            1,
+            [
+                "failure"
+            ]
+        ],
+        "Fatigue & tired": [
+            1,
+            [
+                "tired"
+            ]
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            1,
+            [
+                "depress"
+            ]
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            1,
+            [
+                "ugly"
+            ]
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "17": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            0,
+            []
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            0,
+            []
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            0,
+            []
+        ],
+        "Borderline Personality Disorder": [
+            1,
+            [
+                "going to leave me"
+            ]
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    },
+    "18": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            0,
+            []
+        ],
+        "Other suicidal language": [
+            0,
+            []
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            0,
+            []
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            1,
+            [
+                "conflict"
+            ]
+        ],
+        "Relationships & kinship": [
+            2,
+            [
+                "friend",
+                "parent"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            1,
+            [
+                "conflict"
+            ]
+        ],
+        "Aggression & irritability": [
+            1,
+            [
+                "anger"
+            ]
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            2,
+            [
+                "medicat"
+            ]
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            0,
+            []
+        ],
+        "Guilt": [
+            0,
+            []
+        ],
+        "Anxiety": [
+            3,
+            [
+                "scare",
+                "terrify"
+            ]
+        ],
+        "Panic": [
+            1,
+            [
+                "terrify"
+            ]
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            1,
+            [
+                "worked up"
+            ]
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            1,
+            [
+                "depress"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            0,
+            []
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            0,
+            []
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            1,
+            [
+                "depress"
+            ]
+        ],
+        "Borderline Personality Disorder": [
+            1,
+            [
+                "anger"
+            ]
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            0,
+            []
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            1,
+            [
+                "medication"
+            ]
+        ]
+    },
+    "19": {
+        "Passive suicidal ideation": [
+            0,
+            []
+        ],
+        "Active suicidal ideation & suicidal planning": [
+            0,
+            []
+        ],
+        "Lethal means for suicide": [
+            0,
+            []
+        ],
+        "Direct self-injury": [
+            0,
+            []
+        ],
+        "Suicide exposure": [
+            1,
+            [
+                "suicide"
+            ]
+        ],
+        "Other suicidal language": [
+            1,
+            [
+                "suicide"
+            ]
+        ],
+        "Hospitalization": [
+            0,
+            []
+        ],
+        "Loneliness & isolation": [
+            1,
+            [
+                "alone"
+            ]
+        ],
+        "Social withdrawal": [
+            0,
+            []
+        ],
+        "Relationship issues": [
+            0,
+            []
+        ],
+        "Relationships & kinship": [
+            1,
+            [
+                "marry"
+            ]
+        ],
+        "Bullying": [
+            0,
+            []
+        ],
+        "Sexual abuse & harassment": [
+            0,
+            []
+        ],
+        "Physical abuse & violence": [
+            0,
+            []
+        ],
+        "Aggression & irritability": [
+            0,
+            []
+        ],
+        "Alcohol use": [
+            0,
+            []
+        ],
+        "Other substance use": [
+            0,
+            []
+        ],
+        "Impulsivity": [
+            0,
+            []
+        ],
+        "Defeat & feeling like a failure": [
+            0,
+            []
+        ],
+        "Burdensomeness": [
+            0,
+            []
+        ],
+        "Shame, self-disgust, & worthlessness": [
+            2,
+            [
+                "shame",
+                "unattractive"
+            ]
+        ],
+        "Guilt": [
+            1,
+            [
+                "shame"
+            ]
+        ],
+        "Anxiety": [
+            0,
+            []
+        ],
+        "Panic": [
+            0,
+            []
+        ],
+        "Entrapment & desire to escape": [
+            0,
+            []
+        ],
+        "Trauma & PTSD": [
+            0,
+            []
+        ],
+        "Agitation": [
+            0,
+            []
+        ],
+        "Rumination": [
+            0,
+            []
+        ],
+        "Depressed mood": [
+            2,
+            [
+                "depress",
+                "misery"
+            ]
+        ],
+        "Anhedonia & uninterested": [
+            0,
+            []
+        ],
+        "Emotional pain & psychache": [
+            1,
+            [
+                "misery"
+            ]
+        ],
+        "Grief & bereavement": [
+            0,
+            []
+        ],
+        "Existential meaninglessness & purposelessness": [
+            0,
+            []
+        ],
+        "Emptiness": [
+            0,
+            []
+        ],
+        "Hopelessness": [
+            1,
+            [
+                "no hope"
+            ]
+        ],
+        "Perfectionism": [
+            0,
+            []
+        ],
+        "Fatigue & tired": [
+            0,
+            []
+        ],
+        "Sleep issues": [
+            0,
+            []
+        ],
+        "Psychosis & schizophrenia": [
+            0,
+            []
+        ],
+        "Bipolar Disorder": [
+            1,
+            [
+                "depress"
+            ]
+        ],
+        "Borderline Personality Disorder": [
+            0,
+            []
+        ],
+        "Eating disorders": [
+            0,
+            []
+        ],
+        "Physical health issues & disability": [
+            0,
+            []
+        ],
+        "Incarceration": [
+            0,
+            []
+        ],
+        "Poverty & homelessness": [
+            0,
+            []
+        ],
+        "Gender & sexual identity": [
+            1,
+            [
+                "attract"
+            ]
+        ],
+        "Discrimination": [
+            0,
+            []
+        ],
+        "Finances & work stress": [
+            0,
+            []
+        ],
+        "Barriers to treatment": [
+            0,
+            []
+        ],
+        "Mental health treatment": [
+            0,
+            []
+        ]
+    }
+}

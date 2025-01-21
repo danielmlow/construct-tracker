@@ -185,8 +185,6 @@ class Lexicon:
         construct: str,
         model: str = "command-nightly",
         domain: Optional[str] = None,
-        timeout: int = 45,
-        num_retries: int = 2,
     ) -> Tuple[str, str]:
         """Generate a brief definition of a construct using a specified model."""
         if domain:
@@ -194,17 +192,22 @@ class Lexicon:
             # TODO: the formatting request might not work well for models worse than GPT-4
         else:
             prompt = f"Provide a brief definition of {construct}. Provide reference in APA format where you got it from. Return result in the following format: {{'{construct}': 'the_definition', 'reference':'the_reference'}}"
-        definition = api_request(
+        definition, metadata = api_request(
             prompt,
             model=model,
         )
         # Convert the string to a dictionary
+
         try:
-            definition = definition = eval(eval(definition))
+            definition = eval(definition)
+            if isinstance(definition, str):
+                definition = eval(eval(definition))
             reference = f"{model} which references: {definition['reference']}"
             definition = definition[construct]
-        except ValueError as e:
-            print(f"Error parsing string: {e}. Will try by splitting")
+
+        except Exception as e:
+            print(f"{e}\nError parsing string in content: {metadata}. Will try by splitting")
+            definition = definition.replace("```json", "").replace("```", "").replace("{", "").replace("}", "")
             reference = f"{model} which references: {definition.split('reference')[1]}"
             definition = definition.split('"reference"')[0]
             print(f"New definition: {definition}")
@@ -333,7 +336,6 @@ class Lexicon:
         source: Optional[
             str
         ] = None,  # str: model such as 'command-nightly", see litellm for models, or description "manually added by DML". Cohere 'command-nightly' models offer 5 free API calls per minute.
-        api_key: Optional[str] = None,
         temperature: float = 0.1,
         top_p: float = 1,
         seed: int = 42,
@@ -398,10 +400,9 @@ class Lexicon:
                         )
                     # else, use prompt provided in arguments
                     start = time.time()
-                    response = api_request(
+                    response, metadata = api_request(
                         prompt,
                         model=source,
-                        # api_key=api_key,
                         temperature=temperature,
                         top_p=top_p,
                         max_tokens=max_tokens,
@@ -410,7 +411,7 @@ class Lexicon:
                     end = time.time()
                     time_elapsed = end - start
                     time_elapsed = round(time_elapsed, 1)
-                    print(response)
+                    # print(response)
 
                     tokens = self.clean_response(response, response_type="tokens")
 
@@ -1363,14 +1364,13 @@ def display_highlighted_documents(highlighted_documents: List[str]) -> None:
 def highlight_matches(
     documents: List[str],
     construct: str,
-    matches_construct2doc: Dict[str, List[Tuple[int, List[str]]]],
+    matches_construct2doc: Dict[str, List],
     max_matches: int = 3,
     shuffle: bool = True,
     random_seed: int = 42,
 ) -> List[str]:
     """Highlight the matches of a given construct in the provided documents.
     This function takes a list of documents and a construct to search for matches in the documents. It uses the `matches_construct2doc` dictionary to retrieve the matches for the given construct. The function then iterates over the matches and highlights the matched words in the corresponding document by replacing them with HTML tags. The highlighted documents are returned as a list.
-
 
     Args:
                                     documents: The list of documents to search for matches.
@@ -1420,6 +1420,9 @@ def highlight_matches(
             document = document.replace(word, f"<mark>{word}</mark>")
         highlighted_documents.append(document)
         highlighted_docs_found += 1
+
+    if max_matches:
+        highlighted_documents = highlighted_documents[:max_matches]
 
     display_highlighted_documents(highlighted_documents)
     # return highlighted_documents
