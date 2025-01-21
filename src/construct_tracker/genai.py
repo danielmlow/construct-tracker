@@ -2,7 +2,7 @@
 
 import json
 import os
-from typing import Dict, Optional, Tuple, dict, float, int, str
+from typing import Dict, Optional, Tuple
 
 import requests
 
