@@ -14,6 +14,7 @@ data/*
 !data/*/datasets_description.md
 !data/*/*/.gitkeep
 !data/datasets/load_datasets.py
+!data/suicide_risk_lexicon_codebook_prototypical_examples.txt
 
 
 # Include lexicon_A directory and its contents
