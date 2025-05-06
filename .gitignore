@@ -223,3 +223,4 @@ tutorials/lbl2vec.ipynb
 reddit_feature_extraction_srl_liwc_cts.ipynb
 suicide_risk_lexicon_cts.ipynb
 *embeddings*.pickle
+tutorials/data/embeddings/*.pickle
