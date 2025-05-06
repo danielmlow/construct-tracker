@@ -139,7 +139,7 @@ poetry install
 
 This will create .whl and .tar.gz files in the dist/ directory:
 ```
-poetry build 
+poetry build
 ```
 release the new version (e.g. to PyPI):
 ```
