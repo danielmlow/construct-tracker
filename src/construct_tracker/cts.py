@@ -18,6 +18,7 @@ from typing import Dict, List, Optional, Tuple, Union
 import dill
 import numpy as np
 import pandas as pd
+import torch  # Add explicit torch import
 import tqdm
 from IPython.display import HTML, display
 from sentence_transformers import SentenceTransformer
@@ -31,6 +32,14 @@ from .utils.tokenizer import spacy_tokenizer
 warnings.filterwarnings("ignore", category=UserWarning, message="TypedStorage is deprecated")
 # Set up the logger
 logger = setup_logger()
+
+
+# Add this helper function to handle MPS tensor conversion
+def ensure_numpy(tensor):
+    """Convert PyTorch tensor to numpy array, safely handling MPS/CUDA tensors."""
+    if isinstance(tensor, torch.Tensor):
+        return tensor.detach().cpu().numpy()
+    return tensor
 
 
 def process_document(
@@ -61,10 +70,14 @@ def process_document(
                     - cosine_scores_docs_all (Dict[str, np.ndarray]): The cosine scores for each construct (columns are document tokens, rows are lexicon tokens).
     """
     doc_token_embeddings_i = docs_embeddings_d.get(doc_id)  # embeddings for a document
-    doc_token_embeddings_i = np.array(doc_token_embeddings_i, dtype=float)
+
+    # Convert tensors to numpy arrays if they are torch tensors
+    if doc_token_embeddings_i is not None:
+        doc_token_embeddings_i = [ensure_numpy(emb) for emb in doc_token_embeddings_i]
+        doc_token_embeddings_i = np.array(doc_token_embeddings_i, dtype=float)
 
     if skip_nan and doc_token_embeddings_i is None:
-        return None
+        return None, {}
 
     feature_vectors_doc = [doc_id]
     feature_vectors_doc_col_names = [doc_id_col_name]
@@ -128,6 +141,9 @@ def measure(
     save_dir: Optional[str] = None,
     save_append_to_filename: Optional[str] = None,
     verbose: bool = True,
+    disable_gpu: bool = False,  # option to disable GPU
+    use_parallel: bool = True,  # option to disable parallel processing
+    skip_batching: bool = False,  # option to skip batch processing altogether
 ) -> Union[pd.DataFrame, Tuple[pd.DataFrame, Dict[str, List[str]], Dict[str, np.ndarray]]]:
     """Measure the similarity between constructs and documents.
 
@@ -156,6 +172,7 @@ def measure(
             save_dir (Optional[str], optional): Directory to save the extracted features (will save with relevant filenames and name of lexicon). Defaults to None.
             save_append_to_filename (Optional[str], optional): Append this to filename. Defaults to None.
             verbose (bool, optional): Whether to print progress (True) or just warnings (False). Defaults to True.
+            disable_gpu (bool, optional): Whether to disable GPU usage and force CPU. Useful for MPS issues. Defaults to False.
 
     Returns:
             Union[pd.DataFrame, Tuple[pd.DataFrame, Dict[str, List[str]], Dict[str, np.ndarray]]]:
@@ -165,31 +182,18 @@ def measure(
                             - cosine_scores_docs_all (Dict[str, np.ndarray]): The cosine scores for each construct.
                     - If return_cosine_similarity is False:
                             - feature_vectors_all (pd.DataFrame): The feature vectors for the document.
-
-    Example:
-            documents = ['He is too competitive',
-            'Every time I speak with my cousin Bob, I have great moments of insight, clarity, and wisdom',
-            "He meditates a lot, but he's not super smart"]
-
-            tokens = [
-                    ['insight', 'clarity', 'realization'],
-                    ['mindfulness', 'meditation', 'buddhism'],
-                    ['bad', 'mean', 'crazy'],
-                    ]
-
-            label_names = ['insight', 'mindfulness', 'bad']
-            lexicon_dict = dict(zip(label_names, tokens))
-            # Or lexicon_dict = lexicon_object.to_dict()
-
-            feature_vectors_lc, cosine_scores_docs_lc = measure(
-                    lexicon_dict ,
-                    documents,
-                    )
     """
     if verbose:
         logger.setLevel(logging.DEBUG)
     else:
         logger.setLevel(logging.WARNING)
+
+    # Force CPU if requested
+    if disable_gpu:
+        logger.info("Disabling GPU/MPS usage as requested. Using CPU only.")
+        os.environ["CUDA_VISIBLE_DEVICES"] = ""
+        if hasattr(torch.backends, "mps"):
+            torch.backends.mps.enabled = False
 
     embeddings_model_clean = embeddings_model.split("/")[-1]
 
@@ -201,7 +205,7 @@ def measure(
         except AssertionError:
             raise ValueError("documents_df should have the same amount of rows as the length of documents")
 
-    # Make sure summary_stat is a single statistic, and recommedn using ['max']
+    # Make sure summary_stat is a single statistic, and recommend using ['max']
     if count_if_exact_match:
         try:
             assert len(summary_stat) == 1
@@ -245,9 +249,17 @@ def measure(
                 f"Error {e}. Did not find it. Extracting all lexicon token embeddings from scratch instead of loading stored embeddings..."
             )
 
-    sentence_embedding_model = SentenceTransformer(embeddings_model)  # load embedding
+    # Set device strategy
+    device = "cpu" if disable_gpu else None
+    sentence_embedding_model = SentenceTransformer(
+        embeddings_model, device=device
+    )  # load embedding with device preference
 
     logger.info(f"Default input sequence length for {embeddings_model}: {sentence_embedding_model.max_seq_length}")
+    if device:
+        logger.info(f"Using device: {device}")
+    else:
+        logger.info(f"Using default device")
 
     tokens_to_encode = [n for n in lexicon_tokens_concat if n not in stored_embeddings.keys()]
 
@@ -255,7 +267,9 @@ def measure(
     if tokens_to_encode != []:
         logger.info(f"Encoding {len(tokens_to_encode)} new construct tokens...")
         embeddings = sentence_embedding_model.encode(tokens_to_encode, convert_to_tensor=True, show_progress_bar=True)
-        embeddings_d = dict(zip(tokens_to_encode, embeddings))
+
+        # Convert tensors to numpy immediately
+        embeddings_d = dict(zip(tokens_to_encode, [ensure_numpy(emb) for emb in embeddings]))
         stored_embeddings.update(embeddings_d)
 
         # save pickle of embeddings
@@ -264,13 +278,17 @@ def measure(
             with open(stored_embeddings_path, "wb") as handle:
                 dill.dump(stored_embeddings, handle, protocol=dill.HIGHEST_PROTOCOL)
 
+    # Process stored embeddings to ensure all are numpy arrays
+    for key in stored_embeddings:
+        stored_embeddings[key] = ensure_numpy(stored_embeddings[key])
+
     construct_embeddings_d = {}
     lexicon_dict_final_order = {}
     for construct, tokens in lexicon_dict.items():
         construct_embeddings_d[construct] = []
         lexicon_dict_final_order[construct] = []
         for token in tokens:
-            construct_embeddings_d[construct].append(stored_embeddings.get(token))
+            construct_embeddings_d[construct].append(ensure_numpy(stored_embeddings.get(token)))
             lexicon_dict_final_order[construct].append(token)
 
     # Average embeddings for a single construct
@@ -281,25 +299,21 @@ def measure(
             construct_embeddings_avg = np.mean(construct_embeddings_list, axis=0)
             construct_embeddings_avg = np.array(construct_embeddings_avg, dtype=float)
             construct_embeddings_d[construct] = construct_embeddings_avg
-    # # TODO:
-    # elif construct_representation == "weighted_avg_lexicon":
 
     # Embed documents: docs_embeddings_d
     # ================================================================================================
-    # 100m 6000 long conversations with interaction
 
     # Tokenize documents
     if construct_representation == "document":
         docs_tokenized = documents.copy()
     else:
         logger.info("Tokenizing documents...")
-        # TODO: add arguments as measure() arguments using kwargs.
 
         docs_tokenized = spacy_tokenizer(
             documents,
             method=document_representation,
             lowercase=False,
-            display_tree=False,
+            # display_tree=False,
             remove_punct=False,
             clause_remove_conj=True,
         )
@@ -323,41 +337,64 @@ def measure(
             )
         os.makedirs(save_dir, exist_ok=True)
 
-    # Flatten the list of lists into a single list while keeping track of the keys
-    flattened_docs = []
-    keys = []
-    for i, list_of_clauses in enumerate(docs_tokenized):
-        flattened_docs.extend(list_of_clauses)
-        keys.extend([i] * len(list_of_clauses))
+    # OPTION 1: Non-batched processing approach to avoid MPS issues
+    def encode_without_batching(docs_tokenized):
+        """Encode documents without batching to avoid MPS memory issues."""
+        docs_embeddings_d = {}
+        for i, list_of_clauses in tqdm.tqdm(enumerate(docs_tokenized), desc="Encoding documents"):
+            # Process each document separately to avoid batch memory issues
+            embeddings = []
+            for clause in list_of_clauses:
+                # Encode one clause at a time
+                emb = sentence_embedding_model.encode(clause, convert_to_tensor=False)  # directly get numpy
+                embeddings.append(emb)
+            docs_embeddings_d[i] = embeddings
+        return docs_embeddings_d
 
-    # Encode in batches
+    if skip_batching or doc_encoding_batch_size <= 1:
+        logger.info("Using non-batched encoding approach to avoid MPS issues")
+        docs_embeddings_d = encode_without_batching(docs_tokenized)
+    else:
+        # OPTION 2: Standard batched approach with tensor conversion
+        # Flatten the list of lists into a single list while keeping track of the keys
+        flattened_docs = []
+        keys = []
+        for i, list_of_clauses in enumerate(docs_tokenized):
+            flattened_docs.extend(list_of_clauses)
+            keys.extend([i] * len(list_of_clauses))
 
-    encoded_batches = []
-    for i in tqdm.tqdm(range(0, len(flattened_docs), doc_encoding_batch_size)):
-        batch = flattened_docs[i : i + doc_encoding_batch_size]
-        encoded_batch = sentence_embedding_model.encode(batch, convert_to_tensor=True)
-        encoded_batches.extend(encoded_batch)
+        # Encode in batches
+        encoded_batches = []
+        for i in tqdm.tqdm(range(0, len(flattened_docs), doc_encoding_batch_size), desc="Encoding batches"):
+            batch = flattened_docs[i : i + doc_encoding_batch_size]
+            encoded_batch = sentence_embedding_model.encode(batch, convert_to_tensor=True)
 
-    # Store embeddings in the dictionary
-    docs_embeddings_d = {}
-    current_index = 0
-    for i, list_of_clauses in enumerate(docs_tokenized):
-        docs_embeddings_d[i] = encoded_batches[current_index : current_index + len(list_of_clauses)]
-        current_index += len(list_of_clauses)
-        # for i, list_of_clauses in tqdm.tqdm(enumerate(docs_tokenized), position=0 ):
-        # 	docs_embeddings_d[i] = sentence_embedding_model.encode(list_of_clauses, convert_to_tensor=True)
+            # Convert tensors to numpy immediately after encoding
+            if isinstance(encoded_batch, torch.Tensor):
+                encoded_batch = [ensure_numpy(encoded_batch[j]) for j in range(len(encoded_batch))]
+            else:
+                encoded_batch = [ensure_numpy(emb) for emb in encoded_batch]
 
-        if save_doc_embeddings and save_partial_doc_embeddings and i % 500 == 0:
-            # save partial ones in case it fails during the process
-            i_str = str(i).zfill(5)
-            i_str_all.append(i_str)
+            encoded_batches.extend(encoded_batch)
 
-            with open(
-                save_dir
-                + f"embeddings_{embeddings_model_clean}_docs_{document_representation}_with-interaction_{ts}_part-{i_str}.pickle",
-                "wb",
-            ) as handle:
-                pickle.dump(docs_embeddings_d, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        # Store embeddings in the dictionary
+        docs_embeddings_d = {}
+        current_index = 0
+        for i, list_of_clauses in enumerate(docs_tokenized):
+            docs_embeddings_d[i] = encoded_batches[current_index : current_index + len(list_of_clauses)]
+            current_index += len(list_of_clauses)
+
+            if save_doc_embeddings and save_partial_doc_embeddings and i % 500 == 0:
+                # save partial ones in case it fails during the process
+                i_str = str(i).zfill(5)
+                i_str_all.append(i_str)
+
+                with open(
+                    save_dir
+                    + f"embeddings_{embeddings_model_clean}_docs_{document_representation}_with-interaction_{ts}_part-{i_str}.pickle",
+                    "wb",
+                ) as handle:
+                    pickle.dump(docs_embeddings_d, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     # save final one
     if save_doc_embeddings:
@@ -390,11 +427,33 @@ def measure(
         f"computing similarity between {len(constructs)} constructs and {len(docs_embeddings_d.keys())} documents..."
     )
 
-    # parallelized processing
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        futures = [
-            executor.submit(
-                process_document,
+    # Use the user-specified option for parallel processing
+    if use_parallel:
+        # parallelized processing
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = [
+                executor.submit(
+                    process_document,
+                    doc_id,
+                    docs_embeddings_d,
+                    construct_embeddings_d,
+                    constructs,
+                    construct_representation,
+                    summary_stat,
+                    skip_nan,
+                    doc_id_col_name,
+                )
+                for doc_id in docs_embeddings_d.keys()
+            ]
+            for future in tqdm.tqdm(concurrent.futures.as_completed(futures), desc="Processing documents"):
+                doc_result, doc_cosine_scores = future.result()
+                if doc_result is not None:
+                    feature_vectors_all.append(doc_result)
+                    cosine_scores_docs_all.update(doc_cosine_scores)
+    else:
+        # sequential processing for debugging
+        for doc_id in tqdm.tqdm(docs_embeddings_d.keys(), desc="Processing documents"):
+            doc_result, doc_cosine_scores = process_document(
                 doc_id,
                 docs_embeddings_d,
                 construct_embeddings_d,
@@ -404,10 +463,6 @@ def measure(
                 skip_nan,
                 doc_id_col_name,
             )
-            for doc_id in docs_embeddings_d.keys()
-        ]
-        for future in tqdm.tqdm(concurrent.futures.as_completed(futures)):
-            doc_result, doc_cosine_scores = future.result()
             if doc_result is not None:
                 feature_vectors_all.append(doc_result)
                 cosine_scores_docs_all.update(doc_cosine_scores)
@@ -459,8 +514,6 @@ def measure(
         elif count_if_exact_match == "replace":
             feature_vectors_all = lexicon_counts.where(lexicon_counts >= 1, feature_vectors_all)
 
-    # feature_vectors_all[doc_id_col_name] = range(len(feature_vectors_all))
-
     # add documents
     construct_columns = list(feature_vectors_all.columns[1:])
     feature_vectors_all["document"] = documents
@@ -469,7 +522,6 @@ def measure(
     feature_vectors_all = feature_vectors_all[["document", "documents_tokenized"] + construct_columns]
 
     feature_vectors_all.reset_index(drop=True, inplace=True)
-    # feature_vectors_all.drop(doc_id_col_name, axis=1, inplace=True) # this is not in the right order to either dictionary or parallelization done above
 
     if isinstance(documents_df, pd.DataFrame):
         documents_df.reset_index(drop=True, inplace=True)
@@ -510,7 +562,8 @@ def measure(
             pickle.dump(cosine_scores_docs_all, f, protocol=pickle.HIGHEST_PROTOCOL)
 
     if return_cosine_similarity:
-        return feature_vectors_all, lexicon_dict_final_order, cosine_scores_docs_all
+        # Fix: Return only two values as expected in the calling code
+        return feature_vectors_all, cosine_scores_docs_all
     else:
         return feature_vectors_all
 

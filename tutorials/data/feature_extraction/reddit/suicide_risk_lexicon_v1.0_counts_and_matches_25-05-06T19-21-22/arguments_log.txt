@@ -1,0 +1,12 @@
+self: <construct_tracker.lexicon.Lexicon object at 0x32ffcbf10>
+normalize: False
+return_zero: []
+return_matches: True
+add_word_count: True
+add_lemmatized_lexicon: True
+lemmatize_docs: False
+exact_match_n: 4
+exact_match_tokens: []
+save_dir: ./data/feature_extraction/reddit/suicide_risk_lexicon_v1.0_counts_and_matches_25-05-06T19-21-22/
+save_append_to_filename: 
+save_as: json

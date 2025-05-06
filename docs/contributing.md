@@ -121,6 +121,39 @@ conda activate py310
 This approach ensures that tasks, issues, and branches all have names that correspond.
 It also facilitates incremental neatly scoped changes since it tends to keep the scope of individual changes narrow.
 
+
+## Updating a new version
+
+manually edit pyproject.toml under the [tool.poetry] section:
+```
+[tool.poetry]
+name = "your-package"
+version = "1.0.16"
+```
+
+```
+rm -rf dist/
+poetry lock
+poetry install
+```
+
+This will create .whl and .tar.gz files in the dist/ directory:
+```
+poetry build 
+```
+release the new version (e.g. to PyPI):
+```
+poetry publish
+git tag v1.0.16
+```
+
+To update the Releases page on GitHub (with changelogs, etc.):
+	•	Go to your repository: https://github.com/danielmlow/construct-tracker
+	•	Click “Releases” > “Draft a new release”
+	•	Select the new tag v1.0.16
+	•	Add release notes or changelog
+	•	Click Publish release
+
 ## Debugging what version poetry is using to install
 
 Poetry can have an error where it is using the wrong python version:

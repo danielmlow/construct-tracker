@@ -220,3 +220,6 @@ src/construct_tracker/data/lexicons/suicide_risk_lexicon_v1-0/preprocessing/*
 pypi_token.txt
 lbl2vec.ipynb
 tutorials/lbl2vec.ipynb
+reddit_feature_extraction_srl_liwc_cts.ipynb
+suicide_risk_lexicon_cts.ipynb
+*embeddings*.pickle

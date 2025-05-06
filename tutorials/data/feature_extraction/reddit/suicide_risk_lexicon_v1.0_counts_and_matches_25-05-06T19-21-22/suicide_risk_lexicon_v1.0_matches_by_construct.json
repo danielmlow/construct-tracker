@@ -1,0 +1,257 @@
+{
+    "Passive suicidal ideation": {
+        "end it all": 1,
+        "giving up": 1
+    },
+    "Active suicidal ideation & suicidal planning": {
+        "end it all": 1,
+        "overdose": 1,
+        "kill myself": 1,
+        "attempt": 1,
+        "shoot myself": 1
+    },
+    "Lethal means for suicide": {
+        "overdose": 1,
+        "bridge": 1,
+        "jump off": 1,
+        "gun": 1,
+        "shoot myself": 1
+    },
+    "Direct self-injury": {
+        "overdose": 1,
+        "shoot myself": 1
+    },
+    "Suicide exposure": {
+        "suicide": 2
+    },
+    "Other suicidal language": {
+        "die": 3,
+        "dying": 2,
+        "suicide": 2,
+        "end it": 1
+    },
+    "Hospitalization": {
+        "inpatient": 1
+    },
+    "Loneliness & isolation": {
+        "alone": 3,
+        "no friend": 2,
+        "ever love me": 1,
+        "have no one": 1,
+        "no one to talk": 1,
+        "lonely": 1
+    },
+    "Relationship issues": {
+        "my ex": 1,
+        "cheat": 1,
+        "conflict": 1
+    },
+    "Relationships & kinship": {
+        "friend": 7,
+        "parent": 4,
+        "relationship": 3,
+        "family": 2,
+        "partner": 1,
+        "sible": 1,
+        "husband": 1,
+        "my ex": 1,
+        "bf": 1,
+        "father": 1,
+        "marry": 1
+    },
+    "Physical abuse & violence": {
+        "push": 1,
+        "hit i": 1,
+        "attack i": 1,
+        "box": 1,
+        "hit": 1,
+        "hit me": 1,
+        "fight": 1,
+        "gun": 1,
+        "conflict": 1
+    },
+    "Aggression & irritability": {
+        "offend": 2,
+        "attack": 1,
+        "resent": 1,
+        "angry": 1,
+        "annoying": 1,
+        "heated": 1,
+        "anger": 1
+    },
+    "Other substance use": {
+        "medicat": 2,
+        "morphine": 1,
+        "overdo": 1,
+        "meds": 1
+    },
+    "Defeat & feeling like a failure": {
+        "broken": 2,
+        "nothing work": 1,
+        "giving up": 1,
+        "failure": 1
+    },
+    "Burdensomeness": {
+        "burden": 3,
+        "i annoy": 1,
+        "drain": 1
+    },
+    "Shame, self-disgust, & worthlessness": {
+        "pathetic": 2,
+        "broken": 2,
+        "unlovable": 1,
+        "shame": 1,
+        "unattractive": 1
+    },
+    "Guilt": {
+        "fucked up": 1,
+        "messed up": 1,
+        "shame": 1
+    },
+    "Anxiety": {
+        "scare": 3,
+        "afraid": 2,
+        "panic": 2,
+        "anxious": 2,
+        "worry": 1,
+        "anxiety": 1,
+        "terrified": 1,
+        "dread": 1,
+        "nervous": 1,
+        "insecure": 1,
+        "trouble": 1,
+        "terrify": 1
+    },
+    "Panic": {
+        "afraid": 2,
+        "panic": 2,
+        "worry": 1,
+        "terrified": 1,
+        "shake": 1,
+        "dread": 1,
+        "crisis": 1,
+        "terrify": 1
+    },
+    "Entrapment & desire to escape": {
+        "don't know what to do": 2,
+        "stick": 2,
+        "exit": 1
+    },
+    "Trauma & PTSD": {
+        "anxiety": 1,
+        "panic attack": 1
+    },
+    "Agitation": {
+        "panic": 2,
+        "anxious": 2,
+        "worry": 1,
+        "shake": 1,
+        "nervous": 1,
+        "worked up": 1
+    },
+    "Rumination": {
+        "worry": 1,
+        "negative thought": 1
+    },
+    "Depressed mood": {
+        "depress": 5,
+        "sad": 3,
+        "miserable": 2,
+        "crying": 1,
+        "despair": 1,
+        "empty": 1,
+        "negative": 1,
+        "sadness": 1,
+        "upset": 1,
+        "cry": 1,
+        "misery": 1
+    },
+    "Emotional pain & psychache": {
+        "crying": 1,
+        "despair": 1,
+        "hollow": 1,
+        "cry": 1,
+        "hurt": 1,
+        "pain": 1,
+        "misery": 1
+    },
+    "Grief & bereavement": {
+        "die": 3,
+        "crying": 1,
+        "lose he": 1,
+        "losing her": 1,
+        "cry": 1
+    },
+    "Existential meaninglessness & purposelessness": {
+        "despair": 1,
+        "hollow": 1,
+        "drift": 1,
+        "meaningless": 1
+    },
+    "Emptiness": {
+        "empty": 1,
+        "hollow": 1,
+        "drain": 1
+    },
+    "Hopelessness": {
+        "don't know what to do": 2,
+        "giving up": 1,
+        "no hope": 1
+    },
+    "Perfectionism": {
+        "perfect": 1,
+        "judge": 1,
+        "i criticize": 1,
+        "failure": 1
+    },
+    "Fatigue & tired": {
+        "tired": 2,
+        "sleep": 1,
+        "drain": 1
+    },
+    "Sleep issues": {
+        "sleep": 1
+    },
+    "Bipolar Disorder": {
+        "depress": 5,
+        "mania": 1,
+        "talk too much": 1
+    },
+    "Borderline Personality Disorder": {
+        "bpd": 4,
+        "fp": 1,
+        "too angry": 1,
+        "split": 1,
+        "going to leave me": 1,
+        "anger": 1
+    },
+    "Eating disorders": {
+        "ugly": 1
+    },
+    "Physical health issues & disability": {
+        "sick": 2,
+        "panic attack": 1,
+        "pain": 1
+    },
+    "Gender & sexual identity": {
+        "girl": 2,
+        "question": 1,
+        "boy": 1,
+        "attract": 1
+    },
+    "Discrimination": {
+        "profile": 1
+    },
+    "Finances & work stress": {
+        "work": 5,
+        "job": 1,
+        "save": 1,
+        "retire": 1
+    },
+    "Mental health treatment": {
+        "medication": 2,
+        "psychiatr": 1,
+        "get help": 1,
+        "therapy": 1
+    }
+}
