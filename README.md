@@ -155,16 +155,16 @@ print(matches_per_doc)
 
 
 
-<!-- ## 2. Construct-text similarity (CTS): finding similar phrases to tokens in your lexicon
+## 2. Construct-text similarity (CTS): finding similar phrases to tokens in your lexicon
 
 ### Like Ctrl+F on steroids!
 Lexicons may miss relevant words if not contained in the lexicon (it only counts exact matches). Embeddings can find semantically similar tokens. CTS will scan the document and return how similar is the most related phrase to any word in the lexicon.
 
-<!-- magick -density 300 docs/images/cts.pdf -background white -alpha remove -quality 100 docs/images/cts.png -->
-<!-- <img src="docs/images/cts.png" alt="Construct-text similarity" width="650"/> -->
+magick -density 300 docs/images/cts.pdf -background white -alpha remove -quality 100 docs/images/cts.png 
+<img src="docs/images/cts.png" alt="Construct-text similarity" width="650"/> 
 
-<!-- It will vectorize lexicon tokens and document tokens (e.g., phrases) into embeddings (quantitivae vector representing aspects of meaning). Then it will compute the similarity between both sets of tokens and return the maximum similarity as its score for the document.  -->
-<!--
+It will vectorize lexicon tokens and document tokens (e.g., phrases) into embeddings (quantitivae vector representing aspects of meaning). Then it will compute the similarity between both sets of tokens and return the maximum similarity as its score for the document.  
+
 
 ```python
 lexicon_dict = my_lexicon.to_dict()
@@ -178,13 +178,13 @@ display(features)
 ```
 <img src="docs/images/cts_scores.png" alt="Construct-text similarity" width="700"/>
 
-So we see that even though compassion did not find an exact match it had some relationship to the first two documents.  -->
+So we see that even though compassion did not find an exact match it had some relationship to the first two documents.  
 
 
 
-<!-- You can also sum the exact counts with the similarities for more fine-grained scores.
+You can also sum the exact counts with the similarities for more fine-grained scores.
 
-<img src="docs/images/cts_scores_sum.png" alt="Construct-text similarity" width="700"/> -->
+<img src="docs/images/cts_scores_sum.png" alt="Construct-text similarity" width="700"/> 
 
 We provide many features to add/remove tokens, generate definitions, validate with human ratings, and much more (see `tutorials/construct_tracker.ipynb`) [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/danielmlow/construct-tracker/blob/main/tutorials/construct_tracker.ipynb)
 
